@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Karthikeyan A, an AI & Data Science student and aspiring AI Engineer. specialized in Python, Java, and Prompt Engineering.">
+    <meta name="keywords"
+        content="Karthikeyan A, AI Portfolio, Data Science, Artificial Intelligence, Student Portfolio, Web Developer, Prompt Engineering">
+    <meta name="author" content="Karthikeyan A">
+    <title>Karthikeyan A | AI & Data Science Student</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=calistoga&family=inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Karthikeyan's <span>Portfolio</span></a>
+
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-accent"></div>
+        <div class="container hero-container">
+            <div class="hero-wrapper">
+                <div class="hero-text fade-in-left">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1 class="hero-name"><span class="gradient-text">Karthikeyan A</span></h1>
+                    <h2 class="hero-subtitle">I am a <span id="typing-text"></span><span class="cursor">|</span></h2>
+                    <p class="hero-description desktop-desc">
+                        First-year B.Tech AI & Data Science student at SNS College of Technology.
+                        Merging creativity with logic to build intelligent solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Featured Projects</a>
+                    </div>
+                    <div class="social-hero">
+                        <a href="https://github.com/karthi0607-lab" class="social-icon-sm"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/karthikeyan-a-6a0622383" class="social-icon-sm"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-image fade-in-right">
+                    <div class="profile-wrapper">
+                        <img src="profile.jpg" alt="Karthikeyan A" class="profile-main"
+                            onerror="this.src='https://ui-avatars.com/api/?name=Karthikeyan+A&background=0f172a&color=3b82f6&size=400&font-size=0.33'">
+                        <div class="floating-badge badge-top">
+                            <i class="fas fa-brain"></i>
+                            <span>AI Enthusiast</span>
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            <i class="fas fa-code"></i>
+                            <span>Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Particles Background -->
+            <div class="particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-down-mouse">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content fade-in">
+                <div class="about-card glass-card">
+                    <div class="about-text">
+                        <p>
+                            I am a dedicated <strong>AI & Data Science student</strong> with a strong passion for
+                            technology and innovation. Currently pursuing my B.Tech at SNS College of Technology, I have
+                            already earned IBM certifications in <strong>Fundamentals of AI</strong>, <strong>Web
+                                Development</strong>, and <strong>Design Thinking</strong>.
+                        </p>
+                        <p>
+                            My journey involves active participation in hackathons, exploring <strong>Prompt
+                                Engineering</strong>, and embracing the "vibe coding" culture. I pride myself on strong
+                            logical thinking and problem-solving abilities, always eager to learn and adapt to new
+                            technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title fade-in">My <span class="gradient-text">Skills</span></h2>
+
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category fade-in-up">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-card glass-card">
+                            <i class="fab fa-python skill-icon"></i>
+                            <h4>Python</h4>
+                            <span class="skill-level">Basic</span>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fab fa-java skill-icon"></i>
+                            <h4>Java</h4>
+                            <span class="skill-level">Basic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Tools -->
+                <div class="skill-category fade-in-up" style="transition-delay: 0.1s">
+                    <h3><i class="fas fa-tools"></i> Dev Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-card glass-card">
+                            <i class="fab fa-github skill-icon"></i>
+                            <h4>GitHub</h4>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fas fa-code-branch skill-icon"></i>
+                            <h4>VS Code</h4>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fas fa-table skill-icon"></i>
+                            <h4>MS Excel</h4>
+                            <span class="skill-level">Basic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Emerging Skills -->
+                <div class="skill-category fade-in-up" style="transition-delay: 0.2s">
+                    <h3><i class="fas fa-brain"></i> AI & Emerging</h3>
+                    <div class="skill-items">
+                        <div class="skill-card glass-card">
+                            <i class="fas fa-robot skill-icon"></i>
+                            <h4>Prompt Engineering</h4>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <i class="fas fa-magic skill-icon"></i>
+                            <h4>Vibe Coding</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cognitive Skills -->
+                <div class="skill-category fade-in-up" style="transition-delay: 0.3s">
+                    <h3><i class="fas fa-lightbulb"></i> Professional</h3>
+                    <div class="skill-tags">
+                        <span class="tag glass-tag">Logical Thinking</span>
+                        <span class="tag glass-tag">Problem Solving</span>
+                        <span class="tag glass-tag">Creativity</span>
+                        <span class="tag glass-tag">Design Thinking</span>
+                        <span class="tag glass-tag">Project Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured <span class="gradient-text">Projects</span></h2>
+
+            <div class="projects-container">
+                <div class="project-card glass-card fade-in-up">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Automated Medical Reporting Application</h3>
+                            <div class="project-links">
+                                <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">
+                            The Automated Medical Reporting System is an AI-powered web application designed to assist
+                            radiologists and healthcare professionals in generating accurate and structured medical
+                            reports. The system processes diagnostic images such as X-rays, CT scans, and MRIs using
+                            computer vision techniques, while also analyzing laboratory results through intelligent data
+                            processing. Based on this analysis, the system automatically generates a draft medical
+                            report that includes clear findings, clinical interpretations, and recommendations. The
+                            generated report can then be reviewed, edited, and approved by a radiologist to ensure
+                            accuracy and patient safety. The main goal of the system is to reduce reporting time,
+                            minimize human errors, improve workflow efficiency, and support doctors in delivering faster
+                            and more reliable healthcare services.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">AI</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Automation</span>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/karthikeyan-a-6a0622383_ai-datascience-healthcareai-activity-7427235648941666304-RBca?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6ZK1gB2Tg6E8Ll9ZpEvT5rKwpmRykzbtU"
+                            target="_blank" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future projects -->
+                <!-- You can duplicate the project-card structure here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title fade-in">Education <span class="gradient-text">Timeline</span></h2>
+
+            <div class="timeline">
+                <div class="timeline-item fade-in-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">2025 – 2029</div>
+                        <h3 class="timeline-title">B.Tech Artificial Intelligence and Data Science</h3>
+                        <h4 class="timeline-subtitle">SNS College of Technology</h4>
+                        <div class="cgpa-badge">CGPA: 8.60</div>
+                        <p>Pursuing undergraduate degree with a focus on AI technologies and data analytics.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">2010 – 2025</div>
+                        <h3 class="timeline-title">Higher Secondary Education</h3>
+                        <h4 class="timeline-subtitle">Sri Kalaimagal Kendra Matric Hr. Sec. School</h4>
+                        <ul class="timeline-list">
+                            <li><strong>HSC:</strong> 91%</li>
+                            <li><strong>SSLC:</strong> 90%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Certifications</h2>
+
+            <!-- IBM Certifications -->
+            <h3 class="cert-category fade-in">IBM</h3>
+            <div class="cert-grid">
+                <div class="cert-card glass-card fade-in-up">
+                    <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Fundamentals of AI</h3>
+                    <p>IBM Certified</p>
+                </div>
+
+                <div class="cert-card glass-card fade-in-up" style="transition-delay: 0.1s">
+                    <div class="cert-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>IBM Certified</p>
+                </div>
+
+                <div class="cert-card glass-card fade-in-up" style="transition-delay: 0.2s">
+                    <div class="cert-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Design Thinking</h3>
+                    <p>IBM Certified</p>
+                </div>
+            </div>
+
+            <!-- Analytics Vidhya Certifications -->
+            <h3 class="cert-category fade-in">Analytics Vidhya</h3>
+            <div class="cert-grid">
+                <div class="cert-card glass-card fade-in-up">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Introduction to Vibe Coding</h3>
+                    <p>Analytics Vidhya</p>
+                </div>
+
+                <div class="cert-card glass-card fade-in-up" style="transition-delay: 0.1s">
+                    <div class="cert-icon"><i class="fas fa-atom"></i></div>
+                    <h3>Explore GenAI Universe</h3>
+                    <p>Analytics Vidhya</p>
+                </div>
+
+                <div class="cert-card glass-card fade-in-up" style="transition-delay: 0.2s">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Getting Started with LLMs</h3>
+                    <p>Analytics Vidhya</p>
+                </div>
+
+                <div class="cert-card glass-card fade-in-up" style="transition-delay: 0.3s">
+                    <div class="cert-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Nano Banana: Image Magic with Gemini 2.5 Flash</h3>
+                    <p>Analytics Vidhya</p>
+                </div>
+
+                <div class="cert-card glass-card fade-in-up" style="transition-delay: 0.4s">
+                    <div class="cert-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Introduction to Prompting with ChatGPT</h3>
+                    <p>Analytics Vidhya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In <span class="gradient-text">Touch</span></h2>
+
+            <div class="contact-wrapper glass-card fade-in-up">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <span>+91 7695988309</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <a href="mailto:karthi06117@gmail.com">karthi06117@gmail.com</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/karthi0607-lab" class="social-icon"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/karthikeyan-a-6a0622383" class="social-icon"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Karthikeyan A. All rights reserved.</p>
+                <p class="footer-tagline">Built with passion for AI & innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
